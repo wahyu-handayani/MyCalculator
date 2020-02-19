@@ -1,12 +1,17 @@
-# MyCalculator
+<h1 align='center'>My CALCULATOR</h1>
 
 ## Introduction
-MyCalculator is a simple calculator that makes it easy for users to do basic mathematical operations.
+My Calculator is a simple calculator that makes it easy for users to do basic mathematical operations.
 This application is built using React Native and Node.js
 
 ## How to Install
 1. ```git clone https://github.com/wahyu-handayani/MyCalculator.git```
 2. Open your terminal and type: ```npm install``` and then ```npx react-native run-android```
+
+## Rules
+1. Enter the numbers in the fields provided
+2. Check at least 2 check boxes with columns containing numbers
+If not, you will get an error message
 
 ## Screenshot 
 <p >
