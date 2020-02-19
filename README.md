@@ -11,8 +11,8 @@ This application is built using React Native and Node.js
 ## Rules
 1. Enter the numbers in the fields provided
 2. Check at least 2 check boxes with columns containing numbers
-<br></br>
-If not, you will get an error message
+</br>
+<b>If not, you will get an error message</b>
 
 ## Screenshot 
 <p >
