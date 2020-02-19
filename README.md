@@ -1,4 +1,4 @@
-<h1 align='center'>My CALCULATOR</h1>
+<h1 align='center'>My Calculator</h1>
 
 ## Introduction
 My Calculator is a simple calculator that makes it easy for users to do basic mathematical operations.
