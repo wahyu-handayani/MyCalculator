@@ -205,13 +205,44 @@ export default class App extends Component {
   }
 }
 const styles = StyleSheet.create({
-  container:{ padding: 10 },
-  myTitle: { fontSize: 45, marginLeft: 15 },
-  myCal: { marginBottom: 25, fontSize: 45, marginLeft: 15 },
-  logo: { marginTop: 25, marginLeft: 15 },
-  textInput: { backgroundColor: '#add8e6', borderWidth: 3, marginLeft: 15, width: 250, marginBottom: 15 },
-  check: { flex: 1, padding: 10 },
-  simbol: { fontSize: 25, marginLeft: 17 },
-  tombol: { width: 50, marginRight: 15, backgroundColor: '#4682b4' },
-  hasil: { marginLeft: 15, fontSize: 25 }
+  container:{
+    padding: 10
+  },
+  myTitle: {
+    fontSize: 45,
+    marginLeft: 15
+  },
+  myCal: {
+    marginBottom: 25,
+    fontSize: 45,
+    marginLeft: 15
+  },
+  logo: {
+    marginTop: 25,
+    marginLeft: 15
+  },
+  textInput: {
+    backgroundColor: '#add8e6',
+    borderWidth: 3,
+    marginLeft: 15,
+    width: 250,
+    marginBottom: 15
+  },
+  check: {
+    flex: 1,
+    padding: 10
+  },
+  simbol: {
+    fontSize: 25,
+    marginLeft: 17
+  },
+  tombol: {
+    width: 50,
+    marginRight: 15,
+    backgroundColor: '#4682b4'
+  },
+  hasil: {
+    marginLeft: 15,
+    fontSize: 25
+  }
 });
