@@ -199,13 +199,14 @@ export default class App extends Component {
             <Text style={styles.simbol}>/</Text>
           </Button>
         </View>
+        <View style={styles.line} />
         <Text style={styles.hasil}>Hasil: {this.state.hasil}</Text>
       </View>
     )
   }
 }
 const styles = StyleSheet.create({
-  container:{
+  container: {
     padding: 10
   },
   myTitle: {
@@ -226,7 +227,8 @@ const styles = StyleSheet.create({
     borderWidth: 3,
     marginLeft: 15,
     width: 250,
-    marginBottom: 15
+    marginBottom: 15,
+    fontSize:25
   },
   check: {
     flex: 1,
@@ -241,7 +243,13 @@ const styles = StyleSheet.create({
     marginRight: 15,
     backgroundColor: '#4682b4'
   },
+  line:{
+    marginTop:15,
+    borderBottomColor: 'black',
+    borderBottomWidth: 1,
+  },
   hasil: {
+    marginTop:15,
     marginLeft: 15,
     fontSize: 25
   }
