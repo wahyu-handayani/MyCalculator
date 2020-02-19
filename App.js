@@ -13,7 +13,7 @@ export default class App extends Component {
       angka2: '',
       angka3: '',
       hasil: '',
-      error: 'Masukkan data dengan benar'
+      error: 'Masukkan angka dengan benar'
     }
   }
   onChangeText = (key, val) => {
@@ -40,12 +40,16 @@ export default class App extends Component {
         hasil: parseInt(angka) + parseInt(angka3)
       })
     }
-    else if (isChecked2 && isChecked3 && validasi2 && validasi13 && angka2.match(cekNumber).length == angka2.length && angka3.match(cekNumber).length == angka3.length) {
+    else if (isChecked2 && isChecked3 && validasi2 && validasi3 && angka2.match(cekNumber).length == angka2.length && angka3.match(cekNumber).length == angka3.length) {
       this.setState({
         hasil: parseInt(angka2) + parseInt(angka3)
       })
     }
-    else alert(error)
+    else {
+      this.setState({
+        error: 'Centang minimal 2 check box dan harus berisikan angka'
+      })
+      alert(this.state.error)}
   }
   onMinus() {
     const { isChecked, isChecked2, isChecked3, angka, angka2, angka3, error } = this.state
@@ -68,12 +72,16 @@ export default class App extends Component {
         hasil: parseInt(angka) - parseInt(angka3)
       })
     }
-    else if (isChecked2 && isChecked3 && validasi2 && validasi13 && angka2.match(cekNumber).length == angka2.length && angka3.match(cekNumber).length == angka3.length) {
+    else if (isChecked2 && isChecked3 && validasi2 && validasi3 && angka2.match(cekNumber).length == angka2.length && angka3.match(cekNumber).length == angka3.length) {
       this.setState({
         hasil: parseInt(angka2) - parseInt(angka3)
       })
     }
-    else alert(error)
+    else {
+      this.setState({
+        error: 'Centang minimal 2 check box dan harus berisikan angka'
+      })
+      alert(this.state.error)}
   }
   onTimes() {
     const { isChecked, isChecked2, isChecked3, angka, angka2, angka3, error } = this.state
@@ -96,12 +104,16 @@ export default class App extends Component {
         hasil: parseInt(angka) * parseInt(angka3)
       })
     }
-    else if (isChecked2 && isChecked3 && validasi2 && validasi13 && angka2.match(cekNumber).length == angka2.length && angka3.match(cekNumber).length == angka3.length) {
+    else if (isChecked2 && isChecked3 && validasi2 && validasi3 && angka2.match(cekNumber).length == angka2.length && angka3.match(cekNumber).length == angka3.length) {
       this.setState({
         hasil: parseInt(angka2) * parseInt(angka3)
       })
     }
-    else alert(error)
+    else {
+      this.setState({
+        error: 'Centang minimal 2 check box dan harus berisikan angka'
+      })
+      alert(this.state.error)}
   }
   onDevide() {
     const { isChecked, isChecked2, isChecked3, angka, angka2, angka3, error } = this.state
@@ -124,12 +136,16 @@ export default class App extends Component {
         hasil: parseInt(angka) / parseInt(angka3)
       })
     }
-    else if (isChecked2 && isChecked3 && validasi2 && validasi13 && angka2.match(cekNumber).length == angka2.length && angka3.match(cekNumber).length == angka3.length) {
+    else if (isChecked2 && isChecked3 && validasi2 && validasi3 && angka2.match(cekNumber).length == angka2.length && angka3.match(cekNumber).length == angka3.length) {
       this.setState({
         hasil: parseInt(angka2) / parseInt(angka3)
       })
     }
-    else alert(error)
+    else {
+      this.setState({
+        error: 'Centang minimal 2 check box dan harus berisikan angka'
+      })
+      alert(this.state.error)}
   }
   render() {
     return (
@@ -142,7 +158,7 @@ export default class App extends Component {
           </View>
           <Image style={styles.logo} source={require('./assets/calculator.png')} />
         </View>
-        <View style={{ flexDirection: 'row' }}>
+        <View flexDirection='row'>
           <TextInput
             onChangeText={val => this.onChangeText('angka', val)}
             style={styles.textInput} />
@@ -157,7 +173,7 @@ export default class App extends Component {
           // leftText={"CheckBox"}
           />
         </View>
-        <View style={{ flexDirection: 'row' }}>
+        <View flexDirection='row'>
           <TextInput
             onChangeText={val => this.onChangeText('angka2', val)}
             style={styles.textInput} />
@@ -171,7 +187,7 @@ export default class App extends Component {
             isChecked={this.state.isChecked2}
           />
         </View>
-        <View style={{ flexDirection: 'row' }}>
+        <View flexDirection='row'>
           <TextInput
             onChangeText={val => this.onChangeText('angka3', val)}
             style={styles.textInput} />
@@ -185,7 +201,7 @@ export default class App extends Component {
             isChecked={this.state.isChecked3}
           />
         </View>
-        <View style={{ flexDirection: 'row', padding: 15 }}>
+        <View style={styles.buttonContainer}>
           <Button onPress={() => this.onPlus()} style={styles.tombol}>
             <Text style={styles.simbol}>+</Text>
           </Button>
@@ -252,5 +268,9 @@ const styles = StyleSheet.create({
     marginTop:15,
     marginLeft: 15,
     fontSize: 25
+  },
+  buttonContainer:{
+    flexDirection: 'row',
+    padding: 15
   }
 });
