@@ -28,7 +28,11 @@ export default class App extends Component {
         this.setState({
           hasil: parseInt(angka) + parseInt(angka2) + parseInt(angka3)
         })
-      else alert(error)
+      else {
+        this.setState({
+          hasil:''
+        })
+        alert(error)}
     }
     else if (isChecked && isChecked2 && validasi1 && validasi2 && angka.match(cekNumber).length == angka.length && angka2.match(cekNumber).length == angka2.length) {
       this.setState({
@@ -47,7 +51,7 @@ export default class App extends Component {
     }
     else {
       this.setState({
-        error: 'Centang minimal 2 check box dan harus berisikan angka'
+        error: 'Centang minimal 2 check box dan harus berisikan angka',hasil:''
       })
       alert(this.state.error)}
   }
@@ -60,7 +64,11 @@ export default class App extends Component {
         this.setState({
           hasil: parseInt(angka) - parseInt(angka2) - parseInt(angka3)
         })
-      else alert(error)
+      else {
+        this.setState({
+          hasil:''
+        })
+        alert(error)}
     }
     else if (isChecked && isChecked2 && validasi1 && validasi2 && angka.match(cekNumber).length == angka.length && angka2.match(cekNumber).length == angka2.length) {
       this.setState({
@@ -79,7 +87,7 @@ export default class App extends Component {
     }
     else {
       this.setState({
-        error: 'Centang minimal 2 check box dan harus berisikan angka'
+        error: 'Centang minimal 2 check box dan harus berisikan angka',hasil:''
       })
       alert(this.state.error)}
   }
@@ -92,7 +100,11 @@ export default class App extends Component {
         this.setState({
           hasil: parseInt(angka) * parseInt(angka2) * parseInt(angka3)
         })
-      else alert(error)
+      else {
+        this.setState({
+          hasil:''
+        })
+        alert(error)}
     }
     else if (isChecked && isChecked2 && validasi1 && validasi2 && angka.match(cekNumber).length == angka.length && angka2.match(cekNumber).length == angka2.length) {
       this.setState({
@@ -111,7 +123,7 @@ export default class App extends Component {
     }
     else {
       this.setState({
-        error: 'Centang minimal 2 check box dan harus berisikan angka'
+        error: 'Centang minimal 2 check box dan harus berisikan angka',hasil:''
       })
       alert(this.state.error)}
   }
@@ -124,7 +136,11 @@ export default class App extends Component {
         this.setState({
           hasil: parseInt(angka) / parseInt(angka2) / parseInt(angka3)
         })
-      else alert(error)
+      else {
+        this.setState({
+          hasil:''
+        })
+        alert(error)}
     }
     else if (isChecked && isChecked2 && validasi1 && validasi2 && angka.match(cekNumber).length == angka.length && angka2.match(cekNumber).length == angka2.length) {
       this.setState({
@@ -143,7 +159,7 @@ export default class App extends Component {
     }
     else {
       this.setState({
-        error: 'Centang minimal 2 check box dan harus berisikan angka'
+        error: 'Centang minimal 2 check box dan harus berisikan angka',hasil:''
       })
       alert(this.state.error)}
   }
