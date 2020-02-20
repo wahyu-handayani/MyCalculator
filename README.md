@@ -9,10 +9,9 @@ This application is built using React Native and Node.js
 2. Open your terminal and type: ```npm install``` and then ```npx react-native run-android```
 
 ## Rules
-1. Enter the numbers in the fields provided
+1. Enter only numbers in the fields provided
 2. Check at least 2 check boxes with columns containing numbers
-</br>
-<b>If not, you will get an error message</b>
+* <b>Note: If not, you will get an error message</b>
 
 ## Screenshot 
 <p >
