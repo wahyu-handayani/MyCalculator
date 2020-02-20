@@ -187,7 +187,7 @@ export default class App extends Component {
             isChecked={this.state.isChecked2}
           />
         </View>
-        <View flexDirection='row'>
+        <View style={{ flexDirection: 'row' }}>
           <TextInput
             onChangeText={val => this.onChangeText('angka3', val)}
             style={styles.textInput} />
